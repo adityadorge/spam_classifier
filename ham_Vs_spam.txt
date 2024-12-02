@@ -1,0 +1,110 @@
+1. Look at the email address of spam 
+2. Spam has more html content in it
+3. length of email addressof spam ?
+4. Examine the subject of the email
+5. Spam email contains more links
+6. Creating dataset which consist of filtered hams&spams to feed to the model
+
+1. **Header Analysis**
+
+**Legitimate Email (Ham):**
+- From Address:
+  - Usually comes from a recognizable and verified sender (e.g., support@example.com).
+  - Domain matches the organization’s name or business.
+  - Passes SPF, DKIM, and DMARC checks (used to verify sender authenticity).
+- To Address:
+  - Relevant, concise, and aligns with the content of the email.
+  - No use of all caps, excessive punctuation (e.g., !!!), or misleading text.
+- Reply-To Address:
+  - Usually matches the "From" address.
+
+**Spam Email:**
+- From Address:
+  - Often uses suspicious or spoofed addresses (e.g., random123@fake.com or support@paypal.secure-fake.com).
+  - Free email providers (e.g., Gmail, Yahoo) are sometimes used inappropriately for official-looking emails.
+- To Address:
+  - May not match your exact email (e.g., sent to a list of undisclosed recipients or a generic email like user@example.com).
+- Subject Line:
+  - Often contains clickbait, urgency, or misleading information (e.g., "Congratulations!!! You’ve won a prize!" or "URGENT: Account Suspension Notice").
+- Reply-To Address:
+  - Mismatch with the "From" address, directing replies to a different suspicious domain.
+
+---
+
+2. **Content Analysis**
+
+**Legitimate Email (Ham):**
+- Personalization:
+  - Often personalized with your name or relevant details.
+- Language and Grammar:
+  - Proper grammar and spelling.
+  - Tone aligns with the sender's usual communication style.
+- Message Purpose:
+  - Clear, logical, and relevant to your interests or ongoing interactions.
+- Attachments/Links:
+  - Links point to legitimate, recognizable domains.
+  - Attachments are explained and expected.
+
+**Spam Email:**
+- Personalization:
+  - Generic salutations (e.g., "Dear Customer" or "Hello User") or no personalization.
+- Language and Grammar:
+  - Contains typos, poor grammar, or unusual phrasing.
+  - Overuse of uppercase letters, symbols, or emojis (e.g., "LIMITED OFFER!!! 🚨").
+- Message Purpose:
+  - Pushes urgency (e.g., "Act now to avoid account suspension!") or offers unrealistic benefits (e.g., "You've won $10,000!").
+- Attachments/Links:
+  - Links often point to suspicious or shortened URLs (e.g., bit.ly).
+  - Unexpected or suspicious file types (e.g., .exe, .zip, .scr).
+
+---
+
+3. **Use of HTML and Formatting**
+
+**Legitimate Email (Ham):**
+- HTML and Design:
+  - Professional-looking, consistent branding (logo, colors, fonts).
+  - Avoids excessive use of images or links.
+- Plain Text Support:
+  - Often includes a plain text version for compatibility.
+
+**Spam Email:**
+- HTML and Design:
+  - Excessive use of bright colors, large fonts, or attention-grabbing images.
+  - Many links or buttons leading to unrelated sites.
+- Plain Text Support:
+  - Usually absent or poorly formatted.
+
+---
+
+4. **Attachments**
+
+**Legitimate Email (Ham):**
+- Attachments are usually in safe formats (e.g., .pdf, .docx).
+- File names are descriptive and relevant.
+- Attachments are expected, based on the context.
+
+**Spam Email:**
+- Attachments often contain malicious files (e.g., .exe, .zip, .scr).
+- May use generic names like invoice1234.pdf or document.zip.
+
+---
+
+5. **Sending Behavior**
+
+**Legitimate Email (Ham):**
+- Sent from trusted mail servers with good reputations.
+- Usually sent to a small, specific audience.
+
+**Spam Email:**
+- Sent from unknown or blacklisted servers.
+- Mass-distributed to large mailing lists or random addresses.
+
+7. **Spammy Keywords**
+Spam emails often include words or phrases like:
+- Congratulations
+- Earn Money
+- Risk-Free
+- Act Now
+- 100% Guaranteed
+- Limited Time Offer
